@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js" defer></script>
+  <title>Meu Portifólio</title>
+</head>
+
+<body>
+
+  <div class="particulas"></div>
+  <nav class="navegacao">
+    <ul class="menu">
+      <li>
+        <a href="#inicio" class="menu-link">Início</a>
+      </li>
+
+      <li>
+        <a href="#sobre" class="menu-link">Sobre</a>
+      </li>
+
+      <li>
+        <a href="#projetos" class="menu-link">Projetos</a>
+      </li>
+
+      <li>
+        <a href="#contatos" class="menu-link">Contato</a>
+      </li>
+    </ul>
+
+  </nav>
+
+  <main id="inicio" class="cabecalho">
+
+    <img src="./assets/img-principall.jpg" alt="foto de Daniel Rosa" class="foto-perfil">
+    <h1>Daniel Rosa</h1>
+    <p class="cabecalho-sub-titulo">Desenvolvedor Back End</p>
+
+
+  </main>
+  <section id="sobre" class="sobre">
+    <h2 class="sobre-titulo">Sobre Mim</h2>
+    <div class="sobre-caixa">
+      <p class="sobre-paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, omnis voluptas
+        quod saepe, consequatur consequuntur incidunt nostrum sint itaque pariatur molestiae voluptatibus, rem
+        temporibus ducimus voluptates libero? Veniam, dolorem blanditiis?</p>
+
+    </div>
+  </section>
+
+  <section id="projetos" class="projetos">
+    <h2 class="projetos-titulo">Meus Projetos</h2>
+    <div class="projetos-caixa">
+      <div class="projetos-card">
+        <img src="./assets/projeto-1.png" alt="Projeto 1" class="projetos-imagem">
+        <div class="caixa-textos-projeto">
+          <h3 class="info-projetos">Banho e tosa</h3>
+          <p class="paragrafo-projetos">Onde seu pet será cuidado com todo carinho e amor</p>
+        </div>
+
+      </div>
+
+      <div class="projetos-card">
+        <img src="./assets/projeto-2.png" alt="Projeto 2" class="projetos-imagem">
+        <div class="caixa-textos-projeto">
+          <h3 class="info-projetos">Rede de internet</h3>
+          <p class="paragrafo-projetos">A melhor banda larga da sua cidade venha conferir</p>
+        </div>
+
+      </div>
+
+      <div class="projetos-card">
+        <img src="./assets/projeto-3.png" alt="Projeto 3" class="projetos-imagem">
+        <div class="caixa-textos-projeto">
+          <h3 class="info-projetos">Shopping Virtual</h3>
+          <p class="paragrafo-projetos">A loja vitual com mais descontos e preços acessível para voçê</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contatos" class="contatos">
+    <h2 class="contatos-titulo">Entre em Contato</h2>
+    <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+      <div class="grupo-form">
+        <input placeholder="Nome" class="campo-form" id="nome">
+      </div>
+
+      <div class="grupo-form">
+        <textarea class="campo-form" placeholder="Digite sua Mensagem" id="mensagem" rows="6"></textarea>
+      </div>
+
+      <button type="submit" class="botao-form">Enviar WhatsApp</button>
+    </form>
+  </section>
+</body>
+
+</html>
