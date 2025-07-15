@@ -36,8 +36,9 @@ body {
 .menu {
   display: flex;
   justify-content: center;
-  list-style: none; /*tira os pontos que vem por padrão na lista*/
-  gap: 3rem;
+  list-style: none; 
+  gap: 1rem;
+ 
 }
 
 .menu-link {
@@ -46,6 +47,7 @@ body {
   font-weight: 500;
   position: relative;
   padding: 0.5rem 0;
+  
   
 }
 
